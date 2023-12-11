@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gooukr search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+
+            </div>
+            <div>
+                <a href="index.html" style="color: green;">Звичайний</a>
+                <a href="images.html">Зображення</a>
+                <a href="extend.html">Розширений</a>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <form name="search" action="https://google.com/search">
+            <div class="gradient"><h1>Gooukr search</h1></div>
+            <input name="q" type="text" placeholder="Чого треба?"><br>
+            <input name="btnI" type="text" placeholder="">
+            <div class="submit">
+                <input type="submit" value="Знайти">
+                <input id="happy" type="button" value="Пощастить">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div></div>
+        <div>Gooukr &copy; 2023</div>
+    </footer>
+<script>
+    document.getElementById("happy").addEventListener("onclick", happySearch);
+    function happySearch(){
+        document.search.btnI.value = "%D0%9C%D0%B5%D0%BD%D1%96+%D0%BF%D0%BE%D1%89%D0%B0%D1%81%D1%82%D0%B8%D1%82%D1%8C";
+        document.search.submit();
+    }
+</script>
+</body>
+</html>
